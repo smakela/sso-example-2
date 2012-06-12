@@ -2,7 +2,7 @@ import codeisdesign.example.sso.security.User
 
 class BootStrap {
 
-    def init = { servletContext ->
+	def init = { servletContext ->
 		new User(
 				username:"codeisdesign",
 				password:"password",
@@ -10,8 +10,8 @@ class BootStrap {
 				accountExpired:false,
 				accountLocked:false,
 				passwordExpired:false
-		).save(flush:true)
+				).save(flush:true)
 	}
-    def destroy = {
-    }
+	def destroy = {
+	}
 }
